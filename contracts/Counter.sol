@@ -25,4 +25,8 @@ contract Counter {
     function storeNum(uint256 _num) public {
         number = _num;
     }
+
+    function getName() public view returns(string memory){
+      return name;
+    }
 }
