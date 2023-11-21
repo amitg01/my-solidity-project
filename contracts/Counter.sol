@@ -11,18 +11,23 @@ contract Counter {
         number = _num;
     }
 
-    function incrementBy2() public returns (uint256) {
-        number = number + 2;
-        return number;
-    }
-
     function increment() public returns (uint256) {
         number++;
         return number;
     }
 
-     function decrement() public returns (uint256) {
+    function incrementBy2() public returns (uint256) {
+        number = number + 2;
+        return number;
+    }
+
+    function decrement() public returns (uint256) {
         number--;
+        return number;
+    }
+
+    function decrementBy2() public returns (uint256) {
+        number = number - 2;
         return number;
     }
 
