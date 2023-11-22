@@ -21,6 +21,11 @@ contract Counter {
         return number;
     }
 
+    function incrementBy3() public returns (uint256) {
+        number = number + 3;
+        return number;
+    }
+
     function decrement() public returns (uint256) {
         number--;
         return number;
